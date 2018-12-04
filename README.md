@@ -12,21 +12,16 @@
 #lecture2(C)
   
 
-preprocessing
-
-    In C, preprocessing involves replacing the lines that start with #include with the contents of the actual file.
-
-compiling
-
-    The compiler takes the complete source code and converts it to assembly code, much simpler instructions that look like this:
-
-    main:                               #   @main
-        .cfi_startproc
-    # BB#0:
-        pushq   %rbp
-    .Ltmp0:
-        .cfi_def_cfa_offset 16
-    .Ltmp1:
-        .cfi_offset %rbp, -16
-        movq %rsp, %rbp
+    1.preprocessing
+        In C, preprocessing involves replacing the lines that start with #include with the contents of the actual file.
+    2.compiling
+      The compiler takes the complete source code and converts it to assembly code, much simpler instructions that look like this:
+           main:                               #   @main
+              .cfi_startproc
+           # BB#0:
+               pushq   %rbp
+     3.assembling
+        Finally, these lines of assembly are converted to 0s and 1s that the CPU can directly understand.
+     4.linking
+        We also need to combine into our program the binary file for standard I/O library that we call functions from, and this last step does exactly that. Recall that we only included stdio.h, which is just the header file that declares the functions, not the actual code for them
 
