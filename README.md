@@ -84,5 +84,61 @@ repeat until no swaps
 comparing sorting demonstration
 https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html 
 
+_Running Time_
+
+-   The notation for theoretical running time includes:
+    
+    -   _O_, worst-case running time, or upper bound
+        
+    -   Ω, best-case running time, or lower bound
+        
+    -   Θ, if both of those are the same
+_Merge sort_
+
+```
+on input of n elements
+    if n < 2
+        return
+    else
+        sort left half of elements
+        sort right half of elements
+        merge sorted halves
+
+```
 
 
+
+
+
+```
+**Lecture4**
+  
+
+ - In C, we call variables that store addresses of other variables **pointers**. (The `*` symbol indicates that a variable is a pointer to some other variable type, so we could have `int *` in addition to `char *` and others.)
+ - (`*` is also used, confusingly, when declaring a variable that the variable should be a pointer. But in this case, and other cases, it is used to go to some address and read the value there.)
+ - `scanf` is a function in C’s standard I/O library, that reads from the user’s keyboard. The arguments it takes are like `printf`'s, but instead of printing to the screen it stores values to variables. Here, we are telling it to look for something that matches a `%i`, integer, and to store it in `&x`.
+ - `&` gets us the address of a variable
+ -   The heap, at top, is where memory for `malloc` comes from.
+    
+-   The stack, in the bottom, is used for functions. In fact, for our C programs, the very bottom of the stack contains a chunk of memory for our `main` function, such as any local variables or arguments.
+    
+-   Then, on top of that, the next function called, such as `swap`, will have its own chunk of memory, called a **stack frame**:
+- `x` was copied into `a`, and `y` was copied into `b`, so `swap` was working with its own copy of the variables. And once `swap` returns, that entire frame of memory is marked as free to be used again.
+- _Images_
+
+1.The bit `1` to represent black and `0` for white, we can create an image with a grid of bits. The first three bytes of a JPEG file are `0xff 0xd8 0xff`. `0xff` is 255. `0xd8` is 216.
+2.Bitmap files, with the extension BMP, maps bits directly to pixels.
+
+
+
+ - a `struct`, we can create a more complicated data type:
+  ```
+
+    typedef struct
+    {
+        string name;
+        string dorm;
+    }
+    student;
+
+```
