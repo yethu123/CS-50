@@ -29,25 +29,29 @@
       - eprintf, to provide information to ourselves when our program is running:
       - Typecasting is casting, or converting, variables from a certain type, like int, to another, like char, or vice versa.
       - can do cryptography
+
+
 #lecture3(algorithm)
    1.Searching
   **linear search**
      
-for each element in array
-    if element you're looking for
-        return true
-return false
+    for each element in array
+        if element you're looking for
+            return true
+    return false
 
  **binary search**
- look at middle of sorted array
-if element you're looking for
-    return true
-else if element is to left
-    search left half of array
-else if element is to right
-    search right half of array
-else
-    return false
+ 
+
+    look at middle of sorted array
+    if element you're looking for
+        return true
+    else if element is to left
+        search left half of array
+    else if element is to right
+        search right half of array
+    else
+        return false
 
 
 2.Sorting
@@ -55,23 +59,30 @@ else
  2. Bubble sort
  3. selection sort
  -    Insertion sort
-for i from 1 to n-1
-   call 0'th through i-1'th elements the "sorted side"
-   remove i'th element
-   insert it into sorted side in order
+
+    for i from 1 to n-1
+       call 0'th through i-1'th elements the "sorted side"
+       remove i'th element
+       insert it into sorted side in order
 
 
 -   Bubble sort
+```
 repeat until no swaps
-   for i from 0 to n-2
-       if i'th and i+1'th elements out of order
-           swap them
-
+    for i from 0 to n-2
+        if i'th and i+1'th elements out of order
+            swap them
+```
 -   Selection sort
-for i from 0 to n-1
-   find smallest element between i'th and n-1'th
-   swap smallest with i'th element
+```
+    for i from 0 to n-1
+       find smallest element between i'th and n-1'th
+       swap smallest with i'th element
+      
+   ```
 
-comparing sorting demostration
+comparing sorting demonstration
 https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html 
+
+
 
