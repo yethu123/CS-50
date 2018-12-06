@@ -180,7 +180,8 @@ The first three bytes of a JPEG file are `0xff 0xd8 0xff`. `0xff` is 255. `0xd8`
  
  **Tool for memory**
     - valgrind
- **free(x)**
+
+**free(x)**
  - we used `malloc` to allocate memory. When we finish using it, it’s best to call `free`
 
 **DATA STRUCTURE**
