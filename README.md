@@ -142,7 +142,7 @@ The first three bytes of a JPEG file are `0xff 0xd8 0xff`. `0xff` is 255. `0xd8`
         string dorm;
     }
     student;
-
+ ```
 
 **Memory**
 
