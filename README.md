@@ -142,3 +142,47 @@ The first three bytes of a JPEG file are `0xff 0xd8 0xff`. `0xff` is 255. `0xd8`
         string dorm;
     }
     student;
+
+
+**Memory**
+
+ -  pointers, which is  an address to a location in memory where some data might be stored.
+ **Memory  in**
+ - The text area contains the binary code of our compiled program.
+    
+ -   Initialized and uninitialized data refers to global variables for our program
+ - **Heap**
+	 - The heap has dynamically allocated memory, or memory allocated when the program is running.
+	 - can manage manually
+	 - `malloc`()
+	      - which allocates some fixed amount of memory
+	      - calloc()   (call location)
+	        -sets the initial values of that memory to 0, so we don’t have garbage values.
+	  - `realloc` grows the size of previously allocated memory,
+	  - **Heap Overflow**
+	       - start allocating so much memory from the heap that we start reaching memory that our stack has grown to.
+	        
+ **Stack**
+ 
+ -   The stack contains slices, or frames, of memory for functions and their local variables.
+ - **stack overflow**
+    - the heap is somewhere above it. If we were to call enough functions, and use up enough
+    much memory, we could overflow the stack to the point where we start overwriting memory in the heap.
+    
+   **Environment variables,** which we’ll see in web programming,
+   are variables like usernames and passwords that we don’t want to store in the source code of our program,
+   but still want access to via different mechanisms.
+ 
+ - Buffer
+ A buffer is a chunk of memory that we’ve allocated to store data,
+ **Buffer Overflow**
+     - writing more data than the size of the buffer,
+ 
+ **Tool for memory**
+    - valgrind
+ **free(x)**
+ - we used `malloc` to allocate memory. When we finish using it, it’s best to call `free`
+
+**DATA STRUCTURE**
+
+ - With pointers, we can connect pieces of memory together in any way we want to.
