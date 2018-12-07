@@ -187,3 +187,113 @@ The first three bytes of a JPEG file are `0xff 0xd8 0xff`. `0xff` is 255. `0xd8`
 **DATA STRUCTURE**
 
  - With pointers, we can connect pieces of memory together in any way we want to.
+**Lecture8_python_basic**
+
+ - Just main(troubled in that)
+ ````
+def main():
+    print("hello, world")
+
+if __name__ == "__main__":
+    main()
+````
+
+ - -   -   `get_char`
+        
+    -   `get_float`
+        
+    -   `get_int`
+        
+    -   `get_string`
+        
+    -   …​
+        
+    
+-   And there are even more types and features built into Python, like:
+    
+    -   `complex`
+        
+        -   complex numbers from mathematics
+            
+        
+    -   `dict`
+        
+        -   a dictionary, like a hash table
+            
+        
+    -   `list`
+        
+        -   like an array that automatically grows and shrinks
+            
+        
+    -   `range`
+        
+    -   `set`
+        
+        -   a list with unique items, with operations like those of sets in mathematics
+            
+        
+    -   `tuple`
+        
+        -   like structs, but without any specifications, like `(x, y)` to store two numbers
+            
+        
+    -   …​
+  - Python also doesn’t have a `do while` loop, so instead we use `while True`, and `break`
+
+**Lecture9_p2**
+ - @app.route` to indicate what the route, or URL, should trigger the function we define below.
+  
+  **Lecture10_SQL**
+ - A **cookie** (in this context) is a small piece of information unique to our login that a web server gives to our browser, that our browser can send back in the future, to verify who we are. We can think of it like a digital handstamp.
+ 
+ - `session` is the key for the cookie, like a variable name, and `value` will be our unique handstamp, which might be a large random number that’s hard for others to guess.
+ - **Database**
+ - SQL, Structured Query Language, is a programming language that we use to talk to a database, a program that stores data and responds to requests for data, like a web server.
+ 
+ - In SQL, we’ll use a few basic operations:
+
+ -   `CREATE …​`
+    
+    -   `INSERT …​`
+    
+     -   `SELECT …​`
+    
+    -   `UPDATE …​`
+    
+    -   `DELETE …​`
+    
+     -   `…​`
+     **Some Statement**
+ - `CREATE TABLE 'registrants' ('id' INTEGER PRIMARY KEY, 'name' TEXT, 'dorm' TEXT)`
+ - `INSERT INTO "registrants" ("id", "name", "dorm") VALUES(1, 'David', 'Matthews')`
+ - `SELECT * FROM "registrants"`
+ - `UPDATE "registrants" SET "name" = 'David Malan' where id = 1`
+ - `DELETE FROM "registrants" WHERE id = 1` 
+**Data Types**
+
+ - -   `BLOB` stands for "binary large object", or binary data.
+    
+-   `INTEGER`
+    
+-   `NULL` is something we can use to specify that there is no value for a particular column, like in C.
+    
+-   `REAL` is a real number, or floating-point value.
+    
+-   `TEXT`
+    
+-   `DATETIME` stores dates and times.
+    
+-   `NUMERIC` stores numbers, whether they are integers or floating-point.
+
+**Attributes**
+
+-   `PRIMARY KEY`, where this column will be used to uniquely identify rows.
+    
+-   `UNIQUE` means that the field will be unique for every row, but not used to identify rows in joins.
+    
+-   `INDEX` means that we want the database to store the field in some index to speed up searches in the future, if we anticipate searching on that field frequently.
+    
+-   `NOT NULL` means that the field has to have some value, and can’t be blank.
+    
+-   `FOREIGN KEY` we’ll come back to again later, but means that it is referring to a row in some other table.
