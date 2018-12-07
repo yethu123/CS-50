@@ -297,3 +297,22 @@ if __name__ == "__main__":
 -   `NOT NULL` means that the field has to have some value, and can’t be blank.
     
 -   `FOREIGN KEY` we’ll come back to again later, but means that it is referring to a row in some other table.
+**lecture11_JavaScript Basic**
+
+```
+for (let value of array)
+{
+    ...
+}
+
+for (let key in object)
+{
+    ...
+}
+```
+
+-    DOM, Document Object Model
+- JSON, JavaScript Object Notation, is a format for storing data in a hierarchy
+-  The technology that a browser uses to make requests dynamically is called **Ajax,** and it allows our browser to make additional special HTTP requests, after the initial one, to get more data from a server
+- https://developers.google.com/maps/documentation/javascript/tutorial
+
