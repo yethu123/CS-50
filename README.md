@@ -272,7 +272,7 @@ if __name__ == "__main__":
  - `DELETE FROM "registrants" WHERE id = 1` 
 **Data Types**
 
- - -   `BLOB` stands for "binary large object", or binary data.
+ -    `BLOB` stands for "binary large object", or binary data.
     
 -   `INTEGER`
     
