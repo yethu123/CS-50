@@ -297,6 +297,12 @@ if __name__ == "__main__":
 -   `NOT NULL` means that the field has to have some value, and can’t be blank.
     
 -   `FOREIGN KEY` we’ll come back to again later, but means that it is referring to a row in some other table.
+- dangerous characters escaped with backslashes:
+
+      ````
+db.execute("SELECT * FROM users
+WHERE username = 'me@examplemailprovider.com' AND password = '\' OR \'1\' = \'1'")
+````
 
 **lecture11_JavaScript Basic**
 
