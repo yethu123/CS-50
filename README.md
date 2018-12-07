@@ -144,7 +144,7 @@ The first three bytes of a JPEG file are `0xff 0xd8 0xff`. `0xff` is 255. `0xd8`
     student;
  ```
 
-**Memory**
+**Lecture5_Memory**
 
  -  pointers, which is  an address to a location in memory where some data might be stored.
  **Memory  in**
@@ -297,6 +297,7 @@ if __name__ == "__main__":
 -   `NOT NULL` means that the field has to have some value, and can’t be blank.
     
 -   `FOREIGN KEY` we’ll come back to again later, but means that it is referring to a row in some other table.
+
 **lecture11_JavaScript Basic**
 
 ```
